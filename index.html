@@ -36,49 +36,70 @@
 
     <div class="card mb-3">
       <div class="row no-gutters">
-        <!-- <div class="col-md-4">
-          <img src="..." class="card-img" alt="...">
-        </div> -->
         <div class="col-md-12">
           <div class="card-body">
-            <h5 class="card-title">Data</h5>
-            <p class="card-text">
-              The dataset for this visualization is from <a href="https://www.citibikenyc.com/system-data">Citi Bike</a>. The visualization
-              includes Citi Bike usage data from October 2019 to September 2020. There were over 18 million rows of data initially, but Tableau only 
-              allows 15 million rows of data. Hence, only the data of Annual member (Subscriber) was included in the visualization.              
-            </p>
 
-            <h5 class="card-title">Objective</h5>
-            <p class="card-text">
-            We are interested in seeing how does the pandemic affects the Citi Bike usage.
-            </p>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#data"><h5 class="card-title">Data</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#obj"><h5 class="card-title">Objective</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#analysis"><h5 class="card-title">Analysis</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#vis"><h5 class="card-title">Visual Source</h5></a>
+              </li>
+            </ul>
 
-            <h5 class="card-title">Analysis</h5>
-            <p class="card-text">
-              <strong>Total Number of Trips</strong> - Prior to the 1st confirmed COVID-19 case in the state of New York, the number of trips taken
-              constantly decreases by over 25% from October to December. This correlates with the decrease in the weather temperatue, which indicates that the weather
-              temperature has an impact on the number of trips taken by the annual members. The number of trips taken, however, increases by about 30%
-              in January before dropping again in Febrauary. This could be due to the temperature fluctuation during the month of January or/and
-              the end of holiday season where roads are not bustling with crowds of pedestrian from various events. </p>
-            <p class="card-text">
-              As the weather enters the spring season, we would expect the number of trips to rise with the nicer outdoor temperature. However, the number of trips
-              steadily drops from January 2020, with a dramatic drop of about 43% in April compared to March. The 1st confirmed positive COVID-19 case occurs on 
-              March 1, 2019. The state of New York quickly turns into an epicenter of COVID-19 where positive cases rapidly rises each day. With 
-              various executive orders from the governer, a lot of companies ask employee to start working from home. Surprisingly, though most of the companies
-              have not allowed employees to return to office, the number of trips taken sees a surge in May. This is likely due to previously closed business back in April
-              has reopened and the previous executive orders start relaxing. The number of trips taken after the pandemic hits almost normalizes as what
-              is seen back in October 2019.</p>
-            <p class="card-text">
-              There seems to be no difference in the distribution of gender and age of the subscribers before or after the pandemic occurs.
-              There is a slight variation in the number of trips taken in which there is no vast different between the weekdays and the weekends after the 
-              pandemic occurs, as opposed to prior to the pandemic where the number of trips are generally higher during the weekdays.</p>
+            <br>
 
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade active show" id="data">
+                <p class="card-text">
+                  The dataset for this visualization is from <a href="https://www.citibikenyc.com/system-data">Citi Bike</a>. The visualization
+                  includes Citi Bike usage data from October 2019 to September 2020. There were over 18 million rows of data initially, but Tableau only 
+                  allows 15 million rows of data. Hence, only the data of Annual member (Subscriber) was included in the visualization.              
+                </p>
+              </div>
+              <div class="tab-pane fade" id="obj">
+                <p>We are interested in seeing how does the pandemic affects the Citi Bike usage.</p>
+              </div>
+              <div class="tab-pane fade" id="analysis">
+                <p class="card-text">
+                  <strong>Total Number of Trips</strong> - Prior to the 1st confirmed COVID-19 case in the state of New York, the number of trips taken
+                  constantly decreases by over 25% from October to December. This correlates with the decrease in the weather temperatue, which indicates that the weather
+                  temperature has an impact on the number of trips taken by the annual members. The number of trips taken, however, increases by about 30%
+                  in January before dropping again in Febrauary. This could be due to the temperature fluctuation during the month of January or/and
+                  the end of holiday season where roads are not bustling with crowds of pedestrian from various events. </p>
+                <p class="card-text">
+                  As the weather enters the spring season, we would expect the number of trips to rise with the nicer outdoor temperature. However, the number of trips
+                  steadily drops from January 2020, with a dramatic drop of about 43% in April compared to March. The 1st confirmed positive COVID-19 case occurs on 
+                  March 1, 2019. The state of New York quickly turns into an epicenter of COVID-19 where positive cases rapidly rises each day. With 
+                  various executive orders from the governer, a lot of companies ask employee to start working from home. Surprisingly, though most of the companies
+                  have not allowed employees to return to office, the number of trips taken sees a surge in May. This is likely due to previously closed business back in April
+                  has reopened and the previous executive orders start relaxing. The number of trips taken after the pandemic hits almost normalizes as what
+                  is seen back in October 2019.</p>
+                  <p class="card-text">
+                  Note that there is a slight variation in the number of trips taken between the weekdays and the weekend after the 
+                  pandemic occurs, as opposed to prior to the pandemic where the number of trips are generally higher during the weekdays.</p>
+                <p class="card-text">
+                  <strong>Subscribers Demographic</strong> - There seems to be no difference in the distribution of gender and age group of the subscribers before or after the pandemic occurs.
+                  Generally, there are more male subscribers compared to female subscribers given at any month. The majority of the subscriber
+                  are with the age range of mid 20s to mid 30s. Again, the same observation is seen regardless of whether it is prior or during the pandemic.
+                  </p>
+                </p>
+                
+              </div>
+              <div class="tab-pane fade" id="vis">
+                <p>The visualization was built using Tableau. See the project, <a href="https://public.tableau.com/profile/cynthia.kunakom#!/vizhome/NY_CitiBike_Subscriber/TotalNumberofTripsWeekday">here</a>.</p>
+              </div>
 
-            </p>
-
-
+            </div>
           
-            <a class="btn btn-outline-primary" href="https://public.tableau.com/profile/cynthia.kunakom#!/vizhome/NY_CitiBike_Subscriber/TotalNumberofTripsWeekday" role="button">Tableau Project</a>
+
           </div>
         </div>
       </div>
