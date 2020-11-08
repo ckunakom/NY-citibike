@@ -27,9 +27,9 @@
     </nav>
 
     <!-- Tableau Stuff -->
-    <div class='tableauPlaceholder' id='viz1604808159835' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS?:language=en&amp;:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1604808159835');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <!-- <div class='tableauPlaceholder' id='viz1604808159835' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS?:language=en&amp;:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1604808159835');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-    </div>
+    </div> -->
 
     <p></p>
 
@@ -41,10 +41,42 @@
         </div> -->
         <div class="col-md-12">
           <div class="card-body">
-            <h5 class="card-title">Total Number of Trips</h5>
+            <h5 class="card-title">Data</h5>
             <p class="card-text">
-              
+              The dataset for this visualization is from <a href="https://www.citibikenyc.com/system-data">Citi Bike</a>. The visualization
+              includes Citi Bike usage data from October 2019 to September 2020. There were over 18 million rows of data initially, but Tableau only 
+              allows 15 million rows of data. Hence, only the data of Annual member (Subscriber) was included in the visualization.              
             </p>
+
+            <h5 class="card-title">Objective</h5>
+            <p class="card-text">
+            We are interested in seeing how does the pandemic affects the Citi Bike usage.
+            </p>
+
+            <h5 class="card-title">Analysis</h5>
+            <p class="card-text">
+              <strong>Total Number of Trips</strong> - Prior to the 1st confirmed COVID-19 case in the state of New York, the number of trips taken
+              constantly decreases by over 25% from October to December. This correlates with the decrease in the weather temperatue, which indicates that the weather
+              temperature has an impact on the number of trips taken by the annual members. The number of trips taken, however, increases by about 30%
+              in January before dropping again in Febrauary. This could be due to the temperature fluctuation during the month of January or/and
+              the end of holiday season where roads are not bustling with crowds of pedestrian from various events. </p>
+            <p class="card-text">
+              As the weather enters the spring season, we would expect the number of trips to rise with the nicer outdoor temperature. However, the number of trips
+              steadily drops from January 2020, with a dramatic drop of about 43% in April compared to March. The 1st confirmed positive COVID-19 case occurs on 
+              March 1, 2019. The state of New York quickly turns into an epicenter of COVID-19 where positive cases rapidly rises each day. With 
+              various executive orders from the governer, a lot of companies ask employee to start working from home. Surprisingly, though most of the companies
+              have not allowed employees to return to office, the number of trips taken sees a surge in May. This is likely due to previously closed business back in April
+              has reopened and the previous executive orders start relaxing. The number of trips taken after the pandemic hits almost normalizes as what
+              is seen back in October 2019.</p>
+            <p class="card-text">
+              There seems to be no difference in the distribution of gender and age of the subscribers before or after the pandemic occurs.
+              There is a slight variation in the number of trips taken in which there is no vast different between the weekdays and the weekends after the 
+              pandemic occurs, as opposed to prior to the pandemic where the number of trips are generally higher during the weekdays.</p>
+
+
+            </p>
+
+
           
             <a class="btn btn-outline-primary" href="https://public.tableau.com/profile/cynthia.kunakom#!/vizhome/NY_CitiBike_Subscriber/TotalNumberofTripsWeekday" role="button">Tableau Project</a>
           </div>
