@@ -22,17 +22,9 @@
   
   <body>
 
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#"><h1>New York Citi Bike</h1></a>
+    <nav class="navbar navbar-dark bg-primary">
+      <a class="navbar-brand"><h3>🚲🚴‍♀️New York Citi Bike Activity🚴‍♂️🚲</h3></a>
     </nav>
-
-    <!-- Tableau Stuff -->
-    <!-- <div class='tableauPlaceholder' id='viz1604808159835' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS?:language=en&amp;:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NY&#47;NY_CitiBike_Subscriber&#47;NYCITIBIKESUBSCRIBERS&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1604808159835');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-    </div> -->
-
-    <p></p>
-
 
     <div class="card mb-3">
       <div class="row no-gutters">
@@ -47,10 +39,10 @@
                 <a class="nav-link" data-toggle="tab" href="#obj"><h5 class="card-title">Objective</h5></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#analysis"><h5 class="card-title">Analysis</h5></a>
+                <a class="nav-link" data-toggle="tab" href="#vis"><h5 class="card-title">Visualization</h5></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#vis"><h5 class="card-title">Visual Source</h5></a>
+                <a class="nav-link" data-toggle="tab" href="#analysis"><h5 class="card-title">Analysis</h5></a>
               </li>
             </ul>
 
@@ -90,15 +82,18 @@
                   Generally, there are more male subscribers compared to female subscribers given at any month. The majority of the subscriber
                   are with the age range of mid 20s to mid 30s. Again, the same observation is seen regardless of whether it is prior or during the pandemic.</p>
                 
-                <img src="data/Number of Trips.png" class="img-fluid" alt="Responsive image">
-                
+                <img src="data/Number of Trips.png" class="img-fluid" alt="Responsive image">  
               </div>
               <div class="tab-pane fade" id="vis">
                 <p>The visualization was built using Tableau. See the project, <a href="https://public.tableau.com/profile/cynthia.kunakom#!/vizhome/NY_CitiBike_Subscriber/TotalNumberofTripsWeekday">here</a>.</p>
               </div>
-
             </div>
           
+            <br>
+
+            <!-- Tableau Stuff -->
+            <div class='tableauPlaceholder' id='viz1604814172073' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3K&#47;3KR9Q39SX&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;3KR9Q39SX' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3K&#47;3KR9Q39SX&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1604814172073');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
 
           </div>
         </div>
