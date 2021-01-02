@@ -22,7 +22,7 @@
   
   <body>
 
-    <nav class="navbar navbar-dark bg-primary">
+    <nav class="navbar navbar-dark bg-secondary">
       <a class="navbar-brand"><h3>🚲🚴‍♀️New York Citi Bike Activity🚴‍♂️🚲</h3></a>
     </nav>
 
@@ -33,10 +33,10 @@
 
             <ul class="nav nav-tabs">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#data"><h5 class="card-title">Data</h5></a>
+                <a class="nav-link active" data-toggle="tab" href="#obj"><h5 class="card-title">Objective</h5></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#obj"><h5 class="card-title">Objective</h5></a>
+                <a class="nav-link" data-toggle="tab" href="#data"><h5 class="card-title">Data</h5></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#vis"><h5 class="card-title">Visualization</h5></a>
@@ -49,15 +49,15 @@
             <br>
 
             <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade active show" id="data">
-                <p class="card-text">
-                  The dataset for this visualization is from <a href="https://www.citibikenyc.com/system-data">Citi Bike</a>. The visualization
-                  includes Citi Bike usage data from October 2019 to September 2020. There were over 18 million rows of data initially, but Tableau only 
-                  allows 15 million rows of data. Hence, only the data of Annual member (Subscriber) was included in the visualization.              
-                </p>
+              <div class="tab-pane fade active show" id="obj">
+                <p>I am interested in seeing how does the pandemic affects the Citi Bike usage using Tableau.</p>
               </div>
-              <div class="tab-pane fade" id="obj">
-                <p>We are interested in seeing how does the pandemic affects the Citi Bike usage.</p>
+              <div class="tab-pane fade" id="data">
+                <p class="card-text">
+                  The dataset for this visualization is from <a href="https://www.citibikenyc.com/system-data">Citi Bike</a>.
+                  The visualization includes Citi Bike usage data from October 2019 to September 2020. There were over 18 million rows of data initially, but Tableau only 
+                  allows 15 million rows of data. Hence, only the data of Annual member (Subscriber) was included in the visualization. All 12-month data files were compiled into 2 file (Pre-COVID19 & COVID19) using Python.              
+                </p>
               </div>
               <div class="tab-pane fade" id="analysis">
                 <p class="card-text">
@@ -70,17 +70,17 @@
                   As the weather enters the spring season, we would expect the number of trips to rise with the nicer outdoor temperature. However, the number of trips
                   steadily drops from January 2020, with a dramatic drop of about 43% in April compared to March. The 1st confirmed positive COVID-19 case occurs on 
                   March 1, 2019. The state of New York quickly turns into an epicenter of COVID-19 where positive cases rapidly rises each day. With 
-                  various executive orders from the governer, a lot of companies ask employee to start working from home. Surprisingly, though most of the companies
+                  various executive orders from the governor, a lot of companies ask employee to start working from home. Surprisingly, though most of the companies
                   have not allowed employees to return to office, the number of trips taken sees a surge in May. This is likely due to previously closed business back in April
                   has reopened and the previous executive orders start relaxing. The number of trips taken after the pandemic hits almost normalizes as what
                   is seen back in October 2019.</p>
                   <p class="card-text">
                   Note that there is a slight variation in the number of trips taken between the weekdays and the weekend after the 
-                  pandemic occurs, as opposed to prior to the pandemic where the number of trips are generally higher during the weekdays.</p>
+                  pandemic occurs, as opposed to prior to the pandemic where the number of trips is generally higher during the weekdays.</p>
                 <p class="card-text">
                   <strong>Subscribers Demographic</strong> - There seems to be no difference in the distribution of gender and age group of the subscribers before or after the pandemic occurs.
                   Generally, there are more male subscribers compared to female subscribers given at any month. The majority of the subscriber
-                  are with the age range of mid 20s to mid 30s. Again, the same observation is seen regardless of whether it is prior or during the pandemic.</p>
+                  is within the age range of mid-20s to mid-30s. Again, the same observation is seen regardless of whether it is prior or during the pandemic.</p>
                 
                 <img src="data/Number of Trips.png" class="img-fluid" alt="Responsive image">  
               </div>
